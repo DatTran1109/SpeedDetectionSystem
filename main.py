@@ -11,8 +11,8 @@ frame_count = np.zeros(1000)
 
 kernal_opening = np.ones((3, 3), np.uint8)
 kernal_closing = np.ones((11, 11), np.uint8)
-bgSubtractor = cv2.createBackgroundSubtractorMOG2(detectShadows=True)
 kernal_erode = np.ones((5, 5), np.uint8)
+bgSubtractor = cv2.createBackgroundSubtractorMOG2(detectShadows=True)
 
 while True:
     ret, frame = cap.read()
